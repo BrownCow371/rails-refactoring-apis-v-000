@@ -1,10 +1,10 @@
 <div class = "container">
   <h1><%= session[:username] %>'s Repos</h1>
-  <% @repos_array.each do |repo| %>
-    <%= repo["name"] %><br>
-  <% end %>
+  <%# @repos_array.each do |repo| %>
+    <%#= repo["name"] %><br>
+  <%# end %>
   <%#=session[:token]%><br>
-  <%#=@repos_array%><br>
+  <%=@repos_array%><br>
   <%#=@github%><br>
     <%#=@github.access_token%>
   <%= form_tag("/repositories/create", method: "post") do %>
